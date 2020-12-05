@@ -32,7 +32,7 @@ class AuthServiceProvider extends ServiceProvider
         //
         Fortify::authenticateUsing(function ($request) {
             $validated = Auth::validate([
-                'mail' => $request->email,
+                'uid' => $request->username,
                 'password' => $request->password
             ]);
 
@@ -41,7 +41,7 @@ class AuthServiceProvider extends ServiceProvider
 
         Fortify::confirmPasswordsUsing(function (User $user, $password) {
             return Auth::validate([
-                'mail' => $user->email,
+                'uid' => $user->username,
                 'password' => $password,
             ]);
         });

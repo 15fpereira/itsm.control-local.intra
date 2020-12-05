@@ -76,7 +76,7 @@ return [
                 'sync_passwords' => 'password',
                 'sync_attributes' => [
                     'name' => 'cn',
-                    'email' => 'uid',
+                    'username' => 'uid',
                 ],
             ],
         ],
@@ -101,7 +101,7 @@ return [
     | they have less time to be guessed. You may change this as needed.
     |
     */
-
+/*
     'passwords' => [
         'users' => [
             'provider' => 'users',
@@ -110,7 +110,7 @@ return [
             'throttle' => 60,
         ],
     ],
-
+*/
     /*
     |--------------------------------------------------------------------------
     | Password Confirmation Timeout
